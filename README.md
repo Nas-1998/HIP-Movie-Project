@@ -34,4 +34,4 @@ The Product Backlog contains all the features and functionalities that need to b
 2. UI/UX designer
    Role :
 
-3. QA tester
+3. QA tester 

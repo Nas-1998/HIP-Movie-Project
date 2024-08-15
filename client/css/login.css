@@ -6,12 +6,18 @@ body {
     align-items: center;
     max-height: 100%;
     margin: 0;
+
+    background-image: url('/client/assets/main-pics.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: cover; */
+    background-size: 100% 100%;
   }
-  
+
   body, html {
     height: 100%;
   }
-  
+
   header {
     width: 100%;
     background-color: transparent;
@@ -25,22 +31,26 @@ body {
     left: 0;
     z-index: 1000;
   }
-  
+
   .logo img {
     height: 50px;
+    border-radius: 50%;
+    margin: 30px;
   }
-  
+
   nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color: #faf9f9;
     font-weight: bold;
+    font-size: 20px;
+
   }
-  
+
   nav a:hover {
     color: #ce2045;
   }
-  
+
   .container {
     background-color: white;
     margin-top: 50px; /* Adjust margin-top to account for fixed header */
@@ -50,21 +60,21 @@ body {
     width: 100%;
     max-width: 400px;
   }
-  
+
   h2 {
     margin-bottom: 20px;
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
   }
-  
+
   label {
     margin: 0px;
     color: #333;
   }
-  
+
   input {
     padding: 7px;
     margin: 5px 0 20px;
@@ -72,7 +82,7 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
   }
-  
+
   button {
     padding: 8px;
     background-color: #a72833;
@@ -81,51 +91,53 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   button:hover {
     background-color: #882124;
   }
-  
+
   p {
     margin-top: 15px;
   }
-  
+
   a {
     color: #882124;
     text-decoration: none;
   }
-  
+
   a:hover {
     text-decoration: underline;
   }
-  
+
   .logo {
     display: block;
     margin: 0 auto 20px auto;
     max-width: 150px;
+    border-radius: 50%;
   }
-  
+
+
   nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-left: 20px;
   }
-  
+
   nav a:hover {
     color: #8d070e;
     transform: scale(1.1);
   }
-  
+
   .nav-left{
     display: flex;
   }
-  
+
   body.login-page .container {
     max-width: 350px; /* Custom width for login page */
     margin-top: 100px ; /* Adjust margin for login page */
   }
-  
+
   /* Specific styling for register page */
   body.register-page .container {
     max-width: 500px; /* Custom width for register page */
