@@ -1,10 +1,26 @@
 /* General styles */
+
+
+html{
+  height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/client/assets/main-pics.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: cover; */
+    background-size: 100% 100%;
 }
+
+
 
 header {
     background-color: #333;
@@ -15,6 +31,8 @@ header {
     align-items: center;
 }
 
+
+
 nav a {
     color: white;
     margin: 0 10px;
@@ -22,13 +40,15 @@ nav a {
 }
 
 .search {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 100px 20px;
+
 }
 
 .search-form {
     margin-top: 20px;
+
 }
 
 .search-form input {
@@ -36,33 +56,44 @@ nav a {
     width: 300px;
     max-width: 80%;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .search-form button {
     padding: 10px 20px;
+    border-radius: 10px;
 }
 
-.movie-gallery {
-    padding: 20px;
-}
+
 
 .movies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 15px;
+    
 }
 
 .movie-card {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: rgb(244, 237, 237);
+    padding: 5px;
+    border-radius: 2px;
+    align-items: center;
     text-align: center;
+    color: rgb(143, 73, 73);
+    width:20%;
+    margin: -110px auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 1px 1px 3px 2px #473535;
 }
 
 .movie-card img {
+    /* width: 0 auto; */
+
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 footer {
@@ -70,7 +101,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 .social-links a {
