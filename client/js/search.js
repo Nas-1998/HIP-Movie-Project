@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchForm = document.getElementById("search-form");
   const movieContainer = document.getElementById("popular-movies");
 
+  
   searchForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
